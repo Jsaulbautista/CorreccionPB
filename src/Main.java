@@ -3,5 +3,8 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("\tCorrección de la prueba");
+        System.out.println("Tipos de videojuegos");
+
     }
+
 }
