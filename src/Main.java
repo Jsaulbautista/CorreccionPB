@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -26,6 +28,28 @@ public class Main {
         System.out.println("tipo: "+ nombre3.getTipo());
         System.out.println("Clasificación: " + nombre3.getClasificacion());
         System.out.println("Es apto para todo público: "+nombre3.getApto_todo_publico());
+
+
+        ArrayList<String> listajuegos = new ArrayList<String>();
+
+        listajuegos.add(nombre1.nombre);
+        listajuegos.add(nombre2.nombre);
+        listajuegos.add(nombre3.nombre);
+
+        for (int i=0; i<3; i++){
+            System.out.println(listajuegos.get(i));
+        }
+
+        System.out.println();
+        try {
+            for (int i=0; i<4; i++){
+                System.out.println(listajuegos.get(i));
+            }
+        }
+        catch(Exception e){
+            System.out.println();
+            System.out.println("El bucle tiene más iteraciones que el arreglo...");
+        }
     }
 
 
