@@ -35,7 +35,8 @@ public class Main {
         listajuegos.add(nombre1.nombre);
         listajuegos.add(nombre2.nombre);
         listajuegos.add(nombre3.nombre);
-
+        System.out.println();
+        System.out.println("Lista de juegos:");
         for (int i=0; i<3; i++){
             System.out.println(listajuegos.get(i));
         }
